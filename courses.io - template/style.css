@@ -1,0 +1,65 @@
+body {
+    font-family: 'Assistant', sans-serif;
+    background-color: #ededed;
+  }
+
+  .navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  nav {
+    background: #00467F;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #A5CC82, #00467F) !important;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #A5CC82, #00467F) !important;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+  footer,
+  .hero {
+    background: #00467F;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #A5CC82, #00467F) !important;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #A5CC82, #00467F) !important;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    overflow: hidden;
+  }
+
+  .main-heading {
+    font-weight: 300 !important;
+  }
+
+  .product-device-2 {
+    background-color: #333;
+  }
+
+  .text-field {
+    background-color: #fff;
+  }
+
+  .icon-container {
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(to left, #A5CC82, #00467F) !important;
+    font-size: 500%;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-80%, -50%);
+  }
+  a{
+    color: #28a745;
+  }
