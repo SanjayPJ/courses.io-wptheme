@@ -63,6 +63,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	display: block;
 	float: left;
 	width: 100%;
+	color: #202020;
 }
 
 .main-navigation ul {

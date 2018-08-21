@@ -15,63 +15,63 @@
 	  <footer class="pt-4 py-md-5 pt-md-5 border-top text-white">
     <div class="row pl-2">
       <div class="col-12 col-md">
-        <h4>courses.io</h4>
-        <small class="d-block mb-3 text-white">© 2017-2018</small>
+        <h4><b><?php bloginfo("name"); ?></b></h4>
+        <small class="d-block mb-3 text-white">© <?php echo get_post_meta("5", 'year', true); ?></small>
       </div>
       <div class="col-6 col-md">
-        <h5>Features</h5>
+        <h5><b><?php echo get_post_meta("5", 'features_heading', true); ?></b></h5>
         <ul class="list-unstyled text-small">
           <li>
-            <a class="text-white" href="#">Cool stuff</a>
+            <a class="text-white" href="#"><?php echo get_post_meta("5", 'feature1', true); ?></a>
           </li>
           <li>
-            <a class="text-white" href="#">Random feature</a>
+            <a class="text-white" href="#"><?php echo get_post_meta("5", 'feature2', true); ?></a>
           </li>
           <li>
-            <a class="text-white" href="#">Team feature</a>
+            <a class="text-white" href="#"><?php echo get_post_meta("5", 'feature3', true); ?></a>
           </li>
           <li>
-            <a class="text-white" href="#">Stuff for developers</a>
+            <a class="text-white" href="#"><?php echo get_post_meta("5", 'feature4', true); ?></a>
           </li>
           <li>
-            <a class="text-white" href="#">Another one</a>
+            <a class="text-white" href="#"><?php echo get_post_meta("5", 'feature5', true); ?></a>
           </li>
           <li>
-            <a class="text-white" href="#">Last time</a>
+            <a class="text-white" href="#"><?php echo get_post_meta("5", 'feature6', true); ?></a>
           </li>
         </ul>
       </div>
       <div class="col-6 col-md">
-        <h5>Resources</h5>
+        <h5><b><?php echo get_post_meta("5", 'resources_heading', true); ?></b></h5>
         <ul class="list-unstyled text-small">
           <li>
-            <a class="text-white" href="#">Resource</a>
+            <a class="text-white" href="#"><?php echo get_post_meta("5", 'resource1', true); ?></a>
           </li>
           <li>
-            <a class="text-white" href="#">Resource name</a>
+            <a class="text-white" href="#"><?php echo get_post_meta("5", 'resource2', true); ?></a>
           </li>
           <li>
-            <a class="text-white" href="#">Another resource</a>
+            <a class="text-white" href="#"><?php echo get_post_meta("5", 'resource3', true); ?></a>
           </li>
           <li>
-            <a class="text-white" href="#">Final resource</a>
+            <a class="text-white" href="#"><?php echo get_post_meta("5", 'resource4', true); ?></a>
           </li>
         </ul>
       </div>
       <div class="col-6 col-md">
-        <h5>About</h5>
+        <h5><b><?php echo get_post_meta("5", 'about_heading', true); ?></b></h5>
         <ul class="list-unstyled text-small">
           <li>
-            <a class="text-white" href="#">Team</a>
+            <a class="text-white" href="#"><?php echo get_post_meta("5", 'about1', true); ?></a>
           </li>
           <li>
-            <a class="text-white" href="#">Locations</a>
+            <a class="text-white" href="#"><?php echo get_post_meta("5", 'about2', true); ?></a>
           </li>
           <li>
-            <a class="text-white" href="#">Privacy</a>
+            <a class="text-white" href="#"><?php echo get_post_meta("5", 'about3', true); ?></a>
           </li>
           <li>
-            <a class="text-white" href="#">Terms</a>
+            <a class="text-white" href="#"><?php echo get_post_meta("5", 'about4', true); ?></a>
           </li>
         </ul>
       </div>

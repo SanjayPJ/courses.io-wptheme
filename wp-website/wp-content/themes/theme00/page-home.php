@@ -27,6 +27,34 @@ Template Name: Home page
  $section3_icon = get_field("section3_icon");
  $section3_desc = get_field("section3_desc");
 
+ //latest course section
+ $course_heding = get_field("course_heding");
+ $course_description = get_field("course_description");
+ $card1_image = get_field("card1_image");
+ $card1_desc = get_field("card1_desc");
+ $card1_time = get_field("card1_time");
+ $card2_image = get_field("card2_image");
+ $card2_desc = get_field("card2_desc");
+ $card2_time = get_field("card2_time");
+ $card3_image = get_field("card3_image");
+ $card3_desc = get_field("card3_desc");
+ $card3_time = get_field("card3_time");
+ $card4_image = get_field("card4_image");
+ $card4_desc = get_field("card4_desc");
+ $card4_time = get_field("card4_time");
+ $card5_image = get_field("card5_image");
+ $card5_desc = get_field("card5_desc");
+ $card5_time = get_field("card5_time");
+ $card6_image = get_field("card6_image");
+ $card6_desc = get_field("card6_desc");
+ $card6_time = get_field("card6_time");
+ $card1_heading = get_field("card1_heading");
+ $card2_heading = get_field("card2_heading");
+ $card3_heading = get_field("card3_heading");
+ $card4_heading = get_field("card4_heading");
+ $card5_heading = get_field("card5_heading");
+ $card6_heading = get_field("card6_heading");
+ 
 get_header();
 ?>
   <script>
@@ -35,8 +63,8 @@ get_header();
   <!-- hero -->
   <div class="hero text-white position-relative overflow-hidden p-5 p-md-5 text-center bg-light">
     <div class="col-md-4 p-lg-4 mx-auto my-5">
-      <h1 class="main-heading font-weight-normal">
-        <?php echo $main_text; ?>
+      <h1 class=" font-weight-normal">
+       <b> <?php echo $main_text; ?></b>
       </h1>
       <p class="font-weight-normal">
         <?php echo $main_subtext; ?>
@@ -61,8 +89,8 @@ get_header();
   <div class="text-field">
     <div class="container">
       <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-        <h1 class="main-heading">
-          <?php echo $feature_heading ?>
+        <h1 class="">
+          <b><?php echo $feature_heading ?></b>
         </h1>
         <p class="">
           <?php echo $feature_subheading; ?>
@@ -73,7 +101,7 @@ get_header();
       <div class="row featurette py-2" style="margin-left: 220px;">
         <div class="col-md-7 my-5">
           <h4 class="featurette-heading">
-            <?php echo $section1_text; ?>
+            <b><?php echo $section1_text; ?></b>
           </h4>
           <p class="text-justify">
             <?php echo $section1_desc; ?>
@@ -99,7 +127,7 @@ get_header();
           </div>
         </div>
         <div class="col-md-7 my-5" style="padding-right: 40px;">
-          <h4 class="featurette-heading"><?php echo $section2_text; ?></h4>
+          <h4 class="featurette-heading"><b><?php echo $section2_text; ?></b></h4>
           <p class="text-justify"><?php echo $section2_desc; ?></p>
         </div>
       </div>
@@ -108,7 +136,7 @@ get_header();
       </div>
       <div class="row featurette py-2" style="margin-left: 220px;">
         <div class="col-md-7 my-5">
-          <h4 class="featurette-heading"><?php echo $section3_text; ?></h4>
+          <h4 class="featurette-heading"><b><?php echo $section3_text; ?></b></h4>
           <p class="text-justify"><?php echo $section3_desc; ?></p>
         </div>
         <div class="col-md-5">
@@ -121,118 +149,104 @@ get_header();
       </div>
     </div>
   </div>
-
   <div class="container-fluid pb-5">
     <div class="container">
       <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-        <h1 class="main-heading">Latest Courses</h1>
-        <p class="">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with
-          default Bootstrap components and utilities with little customization.</p>
+        <h1 class=""><b><?php echo $course_heding; ?></b></h1>
+        <p class=""><?php echo $course_description ?></p>
       </div>
     </div>
     <div class="row" style="margin: 0 200px;">
       <div class="col-md-4">
         <div class="card mb-4 box-shadow">
-          <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]"
-            style="height: 225px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22226%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20226%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1655353c6ef%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1655353c6ef%22%3E%3Crect%20width%3D%22288%22%20height%3D%22226%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2296.828125%22%20y%3D%22119.2390625%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-            data-holder-rendered="true">
+          <img class="card-img-top" style="height: 225px; width: 100%; display: block;" src="<?php echo $card1_image['url']; ?>">
           <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a
-              little bit longer.</p>
+          <h5><b><?php echo $card1_heading ?></b></h5>
+            <p class="card-text"><?php echo $card1_desc; ?></p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
                 <button type="button" class="btn btn-sm btn-outline-success">View</button>
                 <button type="button" class="btn btn-sm btn-outline-success">Edit</button>
               </div>
-              <small class="text-muted">9 mins</small>
+              <small class="text-muted"><?php echo $card1_time ?></small>
             </div>
           </div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card mb-4 box-shadow">
-          <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]"
-            style="height: 225px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22226%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20226%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1655353c6ef%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1655353c6ef%22%3E%3Crect%20width%3D%22288%22%20height%3D%22226%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2296.828125%22%20y%3D%22119.2390625%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-            data-holder-rendered="true">
+          <img class="card-img-top" style="height: 225px; width: 100%; display: block;" src="<?php echo $card2_image['url']; ?>">
           <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a
-              little bit longer.</p>
+          <h5><b><?php echo $card2_heading ?></b></h5>
+            <p class="card-text"><?php echo $card2_desc; ?></p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
                 <button type="button" class="btn btn-sm btn-outline-success">View</button>
                 <button type="button" class="btn btn-sm btn-outline-success">Edit</button>
               </div>
-              <small class="text-muted">9 mins</small>
+              <small class="text-muted"><?php echo $card2_time ?></small>
             </div>
           </div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card mb-4 box-shadow">
-          <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]"
-            style="height: 225px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22226%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20226%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1655353c6ef%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1655353c6ef%22%3E%3Crect%20width%3D%22288%22%20height%3D%22226%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2296.828125%22%20y%3D%22119.2390625%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-            data-holder-rendered="true">
+          <img class="card-img-top" style="height: 225px; width: 100%; display: block;" src="<?php echo $card3_image['url']; ?>">
           <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a
-              little bit longer.</p>
+          <h5><b><?php echo $card3_heading ?></b></h5>
+            <p class="card-text"><?php echo $card3_desc; ?></p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
                 <button type="button" class="btn btn-sm btn-outline-success">View</button>
                 <button type="button" class="btn btn-sm btn-outline-success">Edit</button>
               </div>
-              <small class="text-muted">9 mins</small>
+              <small class="text-muted"><?php echo $card3_time ?></small>
             </div>
           </div>
         </div>
       </div> <div class="col-md-4">
         <div class="card mb-4 box-shadow">
-          <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]"
-            style="height: 225px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22226%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20226%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1655353c6ef%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1655353c6ef%22%3E%3Crect%20width%3D%22288%22%20height%3D%22226%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2296.828125%22%20y%3D%22119.2390625%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-            data-holder-rendered="true">
+          <img class="card-img-top" style="height: 225px; width: 100%; display: block;" src="<?php echo $card4_image['url']; ?>">
           <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a
-              little bit longer.</p>
+          <h5><b><?php echo $card4_heading ?></b></h5>
+            <p class="card-text"><?php echo $card4_desc; ?></p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
                 <button type="button" class="btn btn-sm btn-outline-success">View</button>
                 <button type="button" class="btn btn-sm btn-outline-success">Edit</button>
               </div>
-              <small class="text-muted">9 mins</small>
+              <small class="text-muted"><?php echo $card4_time ?></small>
             </div>
           </div>
         </div>
       </div> <div class="col-md-4">
         <div class="card mb-4 box-shadow">
-          <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]"
-            style="height: 225px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22226%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20226%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1655353c6ef%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1655353c6ef%22%3E%3Crect%20width%3D%22288%22%20height%3D%22226%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2296.828125%22%20y%3D%22119.2390625%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-            data-holder-rendered="true">
+          <img class="card-img-top" style="height: 225px; width: 100%; display: block;" src="<?php echo $card5_image['url']; ?>">
           <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a
-              little bit longer.</p>
+          <h5><b><?php echo $card5_heading ?></b></h5>
+            <p class="card-text"><?php echo $card5_desc; ?></p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
                 <button type="button" class="btn btn-sm btn-outline-success">View</button>
                 <button type="button" class="btn btn-sm btn-outline-success">Edit</button>
               </div>
-              <small class="text-muted">9 mins</small>
+              <small class="text-muted"><?php echo $card5_time ?></small>
             </div>
           </div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card mb-4 box-shadow">
-          <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]"
-            style="height: 225px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22226%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20226%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1655353c6ef%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1655353c6ef%22%3E%3Crect%20width%3D%22288%22%20height%3D%22226%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2296.828125%22%20y%3D%22119.2390625%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-            data-holder-rendered="true">
+          <img class="card-img-top" style="height: 225px; width: 100%; display: block;" src="<?php echo $card6_image['url']; ?>">
           <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a
-              little bit longer.</p>
+          <h5><b><?php echo $card6_heading ?></b></h5>
+            <p class="card-text"><?php echo $card6_desc; ?></p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
                 <button type="button" class="btn btn-sm btn-outline-success">View</button>
                 <button type="button" class="btn btn-sm btn-outline-success">Edit</button>
               </div>
-              <small class="text-muted">9 mins</small>
+              <small class="text-muted"><?php echo $card6_time ?></small>
             </div>
           </div>
         </div>

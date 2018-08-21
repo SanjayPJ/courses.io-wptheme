@@ -3,15 +3,17 @@
 Template Name: Contact page
  */
 
+ $heading = get_field("heading");
+ $description = get_field("description");
+
 get_header();
 ?>
 <script>$(".contact").addClass("active");</script>
   <div class="container-fluid pb-5">
         <div class="container">
             <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-                <h1 class="main-heading">Contact us</h1>
-                <p class="">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built
-                    with default Bootstrap components and utilities with little customization.</p>
+                <h1 class=""><b><?php echo $heading; ?></b></h1>
+                <p class=""><?php echo $description; ?></p>
             </div>
         </div>
         <div class="container">
