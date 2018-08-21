@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying results in search pages
+ * Template part for displaying posts
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -15,7 +15,15 @@
 	<div class="">
 		<?php the_tags('<span class="badge badge-light">', '</span><span class="badge badge-light ml-1">', '</span>') ?>
 		</div>
-		<h2 class="card-title"><?php the_title( '<h2 class="entry-title"><a href="' . esc_url(get_permalink()) . '" rel="bookmark">', '</a></h2>' ); ?></h2>
+		<h2 class="card-title">
+		<?php
+		if ( is_singular() ) :
+			the_title( ' <h1>', '</h1>' );
+		else :
+			the_title( ' <h2 class="text-judgify"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+		endif;
+		?>
+		</h2>
 		<div class="text-muted">
 		<div class="entry-meta">
 		
@@ -25,6 +33,6 @@
 		?>
 		</div><!-- .entry-meta -->
 		</div>
-			<p class="card-text"><?php the_excerpt(); ?></p>
+			<p class="card-text"><?php the_content(); ?></p>
 		</div>
 	</div>

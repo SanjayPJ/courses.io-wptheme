@@ -64,11 +64,11 @@
             <a class="nav-link" href="/contact">Contact</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0 d-none search-m">
+        <form class="form-inline my-2 my-lg-0 d-none search-m" method="get" action="/">
           <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <input name="s" type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
             <div class="input-group-append">
-              <button class="btn btn-success" type="button" id="button-addon2">
+              <button class="btn btn-success" type="submit" id="button-addon2">
                 <i class="fas fa-search"></i>
               </button>
             </div>

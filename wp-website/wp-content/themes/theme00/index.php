@@ -21,8 +21,9 @@ $(".navbar-nav").removeClass("ml-auto");
 $(".search-m").removeClass("d-none");
 </script>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+<div class="container-fluid">
+	<div class="row mx-5 px-5">
+		<div class="col-8 mt-4">
 
 		<?php
 		if ( have_posts() ) :
@@ -30,7 +31,7 @@ $(".search-m").removeClass("d-none");
 			if ( is_home() && ! is_front_page() ) :
 				?>
 				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+				<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</header>
 				<?php
 			endif;
@@ -57,9 +58,14 @@ $(".search-m").removeClass("d-none");
 		endif;
 		?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+    	 </div>
+
+		<div class="col-4">
+		  	<?php get_sidebar(); ?>
+        </div>
+	</div>
+</div>
 
 <?php
-get_sidebar();
+
 get_footer();

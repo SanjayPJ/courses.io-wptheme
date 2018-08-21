@@ -9,14 +9,21 @@
 
 get_header();
 ?>
+<script>
+$(".blog").addClass("active");
+$(".navbar-nav").addClass("mr-auto");
+$(".navbar-nav").removeClass("ml-auto");
+$(".search-m").removeClass("d-none");
+</script>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main">
+<div class="container-fluid">
+	<div class="row mx-5 px-5">
+		<div class="col-8 mt-4">
 
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title">
+				<h1 class="page-title mb-4">
 					<?php
 					/* translators: %s: search query. */
 					printf( esc_html__( 'Search Results for: %s', 'theme00' ), '<span>' . get_search_query() . '</span>' );
@@ -46,10 +53,14 @@ get_header();
 
 		endif;
 		?>
+ </div>
 
-		</main><!-- #main -->
-	</section><!-- #primary -->
+<div class="col-4">
+	  <?php get_sidebar(); ?>
+</div>
+</div>
+</div>
 
 <?php
-get_sidebar();
+
 get_footer();

@@ -9,15 +9,21 @@
 
 get_header();
 ?>
+<script>
+$(".blog").addClass("active");
+$(".navbar-nav").addClass("mr-auto");
+$(".navbar-nav").removeClass("ml-auto");
+$(".search-m").removeClass("d-none");
+</script>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
-
+<div class="container-fluid">
+	<div class="row mx-5 px-5">
+		<div class="col-8 mt-4">
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
 				<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
+				the_archive_title( '<h1 class="page-title pb-2">', '</h1>' );
 				the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
@@ -44,10 +50,13 @@ get_header();
 
 		endif;
 		?>
+    	 </div>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+<div class="col-4">
+	  <?php get_sidebar(); ?>
+</div>
+</div>
+</div>
 
 <?php
-get_sidebar();
 get_footer();

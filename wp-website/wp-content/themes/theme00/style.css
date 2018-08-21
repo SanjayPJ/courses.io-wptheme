@@ -474,3 +474,23 @@ body {
   a{
     color: #28a745;
   }
+  .comment-meta{
+	  background: #fff !important;
+  }
+  .avatar{
+	  border-radius: 50%;
+  }
+  .comment-metadata{
+	  display: inline;
+	  font-size: 70%;
+	  margin-left: 35px;
+  }
+  .comment-content, .reply{
+	  margin-top: 0px;
+	  margin-left: 35px;
+  }
+  .comment{
+	  background-color: #fff;
+	  padding: 10px;
+	  border-radius: 5px;
+  }

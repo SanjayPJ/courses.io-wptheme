@@ -20,13 +20,14 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div id="comments" class="comments-area">
+<div id="comments" class="comments-area mb-5">
 
 	<?php
+	comment_form();
 	// You can start editing here -- including this comment!
 	if ( have_comments() ) :
 		?>
-		<h2 class="comments-title">
+		<h2 class="comments-title mt-5">
 			<?php
 			$theme00_comment_count = get_comments_number();
 			if ( '1' === $theme00_comment_count ) {
@@ -69,7 +70,8 @@ if ( post_password_required() ) {
 
 	endif; // Check for have_comments().
 
-	comment_form();
+	
 	?>
+	
 
 </div><!-- #comments -->
